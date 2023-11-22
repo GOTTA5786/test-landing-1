@@ -1,1 +1,1 @@
-Link to live version: https://test-landing-1.vercel.app/
+Link to live app: https://test-landing-1.vercel.app/
