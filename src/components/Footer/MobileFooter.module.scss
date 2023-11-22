@@ -2,7 +2,6 @@
 
 .container{
     width: 100%;
-    
     > *{
         margin-left: 14px;
     }
@@ -99,6 +98,7 @@
         flex-direction: column;
         gap: 5px;
         margin-top: 50px;
+        margin-bottom: 50px;
 
         > span{
             color: $linkColor;
