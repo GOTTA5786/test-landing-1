@@ -1,0 +1,112 @@
+@import '/src/scss/variables.scss';
+.container{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.box{
+    width: 100%;
+    position: relative;
+    height: 445px;
+}
+
+.content{
+    height: 100%;
+    position: absolute;
+    padding-left: 14px;
+    z-index: 1;
+}
+
+.line{
+    width: 10px;
+    height: 2px;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+}
+
+.firstBlock{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstBlock_p{
+    color: $linkColor;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.firstBlock_company{
+    background-image: linear-gradient( 0.25turn, #FCB045, #FF3F78);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background-clip: text;
+    color: transparent;
+}
+
+.firstBlock_slogan{
+    width: 275px;
+    margin-top: 30px;
+    color: $linkColor;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.secondBlock{
+    margin-top: 45px;
+}
+
+.secondBlock_p{
+    background: linear-gradient(0.25turn, #FCB045 36.99%, #FD1D1D 100%);
+    background-clip: text;
+    color: $linkColor;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.secondBlock_p_gradient{
+    background-clip: text;
+    color: transparent;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+
+.secondBlock_grid{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 10px;
+    row-gap: 14px;
+    margin-top: 20px;
+
+    color: $linkColor;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+
+    > div{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}

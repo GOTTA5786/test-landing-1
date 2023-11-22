@@ -1,0 +1,10 @@
+@import '/src/scss/variables.scss';
+
+.container{
+    color: $linkColor;
+
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

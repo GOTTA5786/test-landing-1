@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useMediaQuery } from 'react-responsive'
+import styles from './App.module.scss'
+import BackgroundLayer from './components/BackgroundLayer/BackgroundLayer'
+import ContentLayer from './components/ContentLayer/ContentLayer'
+import MobileContentLayer from './components/ContentLayer/MobileContentLayer'
 
-function App() {
+
+const App: React.FC = () => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 1020px)'
+  })
+  console.log(isMobile);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div className={styles.container}>
+    {isMobile ? <></> : <BackgroundLayer/>}
+    {isMobile ? <MobileContentLayer/> : <ContentLayer/>}
+    
+  </div>
+  )
 }
-
-export default App;
+export default App

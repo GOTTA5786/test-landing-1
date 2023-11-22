@@ -1,0 +1,8 @@
+.container{
+    fill: radial-gradient(82.3% 82.3% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.25) 59.67%, rgba(167, 49, 49, 0.26) 78.59%, rgba(130, 25, 25, 0.23) 100%);
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    left: 12px;
+    bottom: -8px;
+}

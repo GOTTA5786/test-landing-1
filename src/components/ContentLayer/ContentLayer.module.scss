@@ -1,0 +1,140 @@
+@import '/src/scss/variables.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.leftBlock{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.leftBlock_p{
+    width: 362px;
+    color: $linkColor;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leftBlock_company{
+    background-image: linear-gradient( 0.25turn, #FCB045, #FF3F78);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background-clip: text;
+    color: transparent;
+}
+
+.leftBlock_slogan{
+    width: 275px;
+    margin-top: 30px;
+    color: $linkColor;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rightBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 105px;
+}
+
+.rightBlock_p{
+    width: 291px;
+    background: linear-gradient(0.25turn, #FCB045 36.99%, #FD1D1D 100%);
+    background-clip: text;
+    color: $linkColor;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rightBlock_p_gradient{
+    background-clip: text;
+    color: transparent;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+
+.rightBlock_grid{
+    margin-top: 40px;
+    display: grid;
+    text-align: right;
+    justify-content: right;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    > div{
+        width: 135px;
+    }
+
+    p{
+        color: $linkColor;
+        margin-bottom: 6px;
+        text-align: right;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+    }
+
+    span{
+        color: $linkColor;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.rightBlock_button{
+    width: 262px;
+    height: 61px;
+    margin-top: 61px;
+    background: #4077F3;
+    color: $linkColor;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    border: none;
+}

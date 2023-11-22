@@ -1,0 +1,13 @@
+.container{
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 150px;
+    background: #ffff;
+    opacity: 0.5;
+    filter: blur(100px);
+    position: absolute;
+    top: -150px;
+    left: -80px;
+    
+}

@@ -1,0 +1,95 @@
+@import '/src/scss/variables.scss';
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 124px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    gap: 98px;
+}
+
+.menu{
+    > p {
+        color: $grayText;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+    }
+    
+    > div{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        column-gap: 52px;
+        flex-wrap: wrap;
+        height: 157px;
+    }
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 20px;
+
+    > p{
+        color: $grayText;
+        text-align: right;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+    }
+
+    > span{
+        color: $linkColor;
+        text-align: right;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 70px;
+
+        > span{
+            color: $linkColor;
+            text-align: right;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        span:nth-child(2n){
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+        
+}
