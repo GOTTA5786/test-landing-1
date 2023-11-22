@@ -9,7 +9,6 @@ const App: React.FC = () => {
   const isMobile = useMediaQuery({
     query: '(max-width: 1020px)'
   })
-  console.log(isMobile);
   
   return (
   <div className={styles.container}>
